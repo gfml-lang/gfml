@@ -1,0 +1,10 @@
+;; This document contains ABNF format for GFML language
+;;
+;; Ref:
+;; - https://www.ietf.org/rfc/rfc5234.txt
+;; - https://www.ietf.org/rfc/rfc2234.txt
+
+;; comment
+comment = comment-start-symbol *comment-allowed-char
+comment-start-symbol = %x25
+comment-allowed-char = %x01-09 / %x0E-7F
